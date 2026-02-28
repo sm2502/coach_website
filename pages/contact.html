@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Nicolas Kastenhofer</title>
+    <meta name="description" content="Schreib mir eine Nachricht und vereinbare dein kostenloses Erstgespräch – ich freue mich auf deine Anfrage.">
+    <link rel="icon" type="image/x-icon" href="../logo/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <img src="../logo/Logo Variante 4.svg" alt="Coach Logo" class="logo" decoding="async"/>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Start</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="about.html">Über mich</a></li>
+          <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Sub-Hero -->
+      <section class="sub-hero">
+        <img src="../logo/Logo Variante 4.svg" alt="logo" decoding="async"/>
+        <h1>Kontakt</h1>
+        <p>Kontaktiere mich gerne, um offene Fragen zu klären</p>
+      </section>
+
+      <!-- Kontakt-Infos & Formular -->
+      <section class="contact-wrap">
+        <div class="contact-info">
+          <h2>So erreichst du mich</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Grasbach 27, 4211
+              Alberndorf
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+4368120463550">+43 681 204 635 50</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:nicolas@ziel-orientierung.com"
+                >nicolas@ziel-orientierung.com</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/nicolas_zielorientierung"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+          <a
+            class="btn-primary"
+            target="_blank"
+            href="https://cal.com/nicolas-kastenhofer-zfc4aq/secret"
+          >
+            <i class="fa-solid fa-calendar-check"></i> Kostenloses Erstgespräch
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h2>Nachricht senden</h2>
+
+          <form
+            class="contact-form"
+            action="mailto:nicolas@ziel-orientierung.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail*</label>
+                <input type="email" id="email" name="Email" required />
+              </div>
+              <div class="form-group full">
+                <label for="phone">Telefon (optional)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="Telefon"
+                  placeholder="+43 …"
+                />
+              </div>
+              <div class="form-group full">
+                <label for="message">Nachricht*</label>
+                <textarea
+                  id="message"
+                  name="Nachricht"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-consent full">
+                <label>
+                  <input type="checkbox" required />
+                  Ich habe die
+                  <a href="datenschutz.html">Datenschutz&shy;hinweise</a>
+                  gelesen und stimme der Verarbeitung meiner Daten zum Zweck der
+                  Kontaktaufnahme zu.
+                </label>
+              </div>
+            </div>
+
+            <button id="btnSubmit" type="submit" class="btn-primary">Absenden</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p><strong>Nicolas Kastenhofer</strong></p>
+          <p>Lebens- und Sozialberater in Ausbildung unter Supervision</p>
+          <p>Grasbach 27, 4211 Alberndorf</p>
+          <p>+43 681 20463550</p>
+          <br />
+          <a href="../downloads/Nicolas_Kastenhofer.vcf" download
+            >VCF Visitenkarte</a
+          >
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://www.instagram.com/nicolas_zielorientierung"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nicolas Kastenhofer – Alle Rechte vorbehalten</p>
+      </div>
+    </footer>
+
+
+    <script src="../js/burgermenue.js"></script>
+        <script src="../js/cookie.js"></script>
+  </body>
+</html>

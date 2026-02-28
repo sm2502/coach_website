@@ -1,0 +1,181 @@
+/* Sub-Hero: dezent, passend zu deinem Hero-Design */
+.sub-hero {
+  padding: 4rem 2rem 4rem;
+  text-align: center;
+  background: linear-gradient(to right, #e0f5e9, #ffffff);
+}
+
+.sub-hero img {
+    height: 70px
+}
+
+.sub-hero h1 {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.sub-hero p {
+  color: #222;
+  margin-bottom: 1.2rem;
+  font-size: 1.125rem;
+}
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+.btn-primary {
+  background: #2ecc71;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  margin-top: 1rem;
+}
+.btn-primary:hover { background:#27ae60; transform: translateY(-1px); }
+.btn-outline {
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+  background: transparent;
+}
+.btn-outline:hover { background:#2ecc71; color:#fff; }
+
+/* Über mich Layout */
+.about-me {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  color: #005f3c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.about-image img {
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Philosophie Cards */
+.philosophie {
+  background-color: #ebf7f0;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.philosophie h2 {
+  font-size: 2rem;
+  color: #005f3c;
+  margin-bottom: 3rem;
+}
+
+.philosophie p {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.philosophie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.philosophie-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.philosophie-card h3 {
+  color: #00472d;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.philosophie-card p {
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Warum Section */
+.warum {
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.warum h2 {
+  text-align: center;
+  color: #005f3c;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.warum p {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.warum-liste {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.warum-liste li {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.warum-liste li i {
+  color: #2ecc71;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.warum-liste b {
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .about-image img {max-width: 100%;}
+}

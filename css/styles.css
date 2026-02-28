@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #2ecc71;
+}
+
+/*Hero*/
+
+#hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #e0f5e9, #ffffff);
+  text-align: center;
+}
+#hero img {
+  height: 70px;
+}
+
+#hero h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+
+#hero h3 {
+  font-size: 25px;
+}
+
+#hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-top: 1rem;
+
+  background: #2ecc71;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary:hover {
+  background: #27ae60;
+  transform: translateY(-1px);
+}
+
+/*About*/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 6rem 2rem;
+}
+
+.about .text {
+  max-width: 600px;
+}
+
+.about .text h2 {
+  font-size: 2rem;
+  color: #005f3c;
+}
+
+.about .text p {
+  font-size: 1.15rem;
+}
+
+.about img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Coaching Cards */
+.coaching {
+  background-color: #ebf7f0;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.coaching h2 {
+  font-size: 2rem;
+  color: #005f3c;
+  margin-bottom: 2rem;
+}
+
+.coaching p {
+  font-size: 1.15rem;
+
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.coaching-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 23px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  padding: 1.5rem;
+  max-width: 300px;
+}
+
+.card h3 {
+  color: #00472d;
+  margin-bottom: 0.5rem;
+}
+
+.card button {
+  background-color: #2ecc71;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+/* Zielgruppe-Sektion */
+.target {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.target-text {
+  max-width: 600px;
+}
+
+.target-text h2 {
+  font-size: 2rem;
+  color: #005f3c;
+  margin-bottom: 1rem;
+}
+
+.target-text p {
+  color: #333;
+  font-size: 1.15rem;
+}
+
+.target-image img {
+  width: 370px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonials-quote {
+  background: #ebf7f0;
+  padding: 6rem 2rem;
+  padding-bottom: 2rem;
+}
+
+.testimonials-quote h2 {
+  color: #005f3c;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Wrapper für Slider + Pfeile */
+.tq-wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tq-slider {
+  position: relative;
+  min-height: 220px;
+  padding: 0 56px; /* Platz für Pfeile */
+}
+
+/*  Sprechblase  */
+.tq-bubble {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.4rem 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #444;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  word-break: normal;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.tq-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Zitat-Autor  */
+.tq-cite {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/*  Pfeile  */
+.tq-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: #ebf7f0;
+  color: #005f3c;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 0.25s ease, transform 0.25s ease;
+  z-index: 2;
+}
+
+.tq-arrow:hover {
+  background: rgba(46, 204, 113, 0.4);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.tq-prev {
+  left: 8px;
+}
+.tq-next {
+  right: 8px;
+}
+
+/* Slider Logik: Nur ein Testimonial sichtbar */
+.testimonials-quote .tq-item {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonials-quote .tq-item.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Falls altes CSS mit .testimonial greift -> überschreiben */
+.testimonials-quote .testimonial,
+.testimonials-quote .testimonial.active {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/*Kontakt*/
+.contact {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005f3c;
+}
+
+.contact p {
+  color: #444;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/*Footer*/
+.footer {
+  background-color: #292929;
+  color: #fff;
+  padding: 3rem 2rem 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  color: #ccc;
+}
+
+.footer-info strong {
+  color: #24a158;
+}
+
+.footer-info a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-info a:hover {
+  color: #2ecc71;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #2ecc71;
+}
+
+.footer-links i {
+  font-size: 1.4rem;
+  color: #24a158;
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  color: #777;
+}
+
+/*Cookie-Banner*/
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;                     /* Mitte des Bildschirms */
+  transform: translateX(-50%);   /* wirklich mittig */
+  max-width: 700px;               /* maximale Breite */
+  width: 90%;                     /* passt sich kleineren Bildschirmen an */
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+  font-size: .95rem;
+}
+
+#cookie-banner p {
+  margin: 0;
+  color: #333;
+}
+
+#cookie-banner a {
+  color: #2ecc71;
+  text-decoration: underline;
+}
+
+#cookie-accept {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#cookie-accept:hover {
+  background: #27ae60;
+}
+
+
+
+@media (max-width: 520px) {
+  #cookie-banner { 
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #cookie-accept { 
+    align-self: flex-end;
+  }
+}
+
+
+/*Responsives Design*/
+/* Burger-Menü (nur mobil sichtbar) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #2ecc71;
+  cursor: pointer;
+}
+
+.menu-toggle.open i::before {
+  content: "\f00d";
+}
+
+/* Responsive Design ab max 900px */
+@media (max-width: 900px) {
+  #hero h1 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  .nav-links.showing {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: left;
+    padding: 0.5rem 1rem;
+  }
+
+  .about,
+  .target {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img,
+  .target-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .coaching-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    display: grid;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/*Testimonials Responsive*/
+@media (max-width: 700px) {
+  .testimonials-quote {
+    padding: 3rem 1.2rem;
+  }
+  .tq-slider {
+    padding: 0 40px 72px;
+  }
+  .tq-bubble {
+    max-width: none;
+    padding: 1.1rem 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+  .tq-bubble::after {
+    left: 24px;
+  }
+  .tq-cite {
+    margin-top: 0.75rem;
+  }
+  .tq-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tq-slider {
+    padding: 0 14px 64px;
+  }
+  .tq-arrow {
+    top: auto;
+    bottom: 12px;
+    transform: none;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+  }
+  .tq-prev {
+    left: calc(50% - 58px);
+  }
+  .tq-next {
+    right: calc(50% - 58px);
+  }
+}
