@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 30px;
 }
 
 .nav-links {
@@ -33,14 +33,14 @@ body {
 }
 
 .nav-links a:hover {
-  color: #2ecc71;
+  color: #d3b171;
 }
 
 /*Hero*/
 
 #hero {
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #e0f5e9, #ffffff);
+  background: #001d2c;
   text-align: center;
 }
 #hero img {
@@ -50,15 +50,15 @@ body {
 #hero h1 {
   font-size: 45px;
   margin-bottom: 0px;
+  font-weight: 600; 
+  color: white;
 }
 
-#hero h3 {
-  font-size: 25px;
-}
 
 #hero p {
   font-size: 18px;
   line-height: 1.6;
+  color: white;
 }
 
 .btn-primary {
@@ -70,14 +70,14 @@ body {
   transition: all 0.25s ease;
   margin-top: 1rem;
 
-  background: #2ecc71;
+  background: #c5a66d;
   color: #fff;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .btn-primary:hover {
-  background: #27ae60;
-  transform: translateY(-1px);
+  background: #d3b171;
+  transform: scale(1.05);
 }
 
 /*About*/
@@ -96,11 +96,12 @@ body {
 
 .about .text h2 {
   font-size: 2rem;
-  color: #005f3c;
+  color: #c5a66d;
 }
 
 .about .text p {
   font-size: 1.15rem;
+  color: #2d2d2c;
 }
 
 .about img {
@@ -111,7 +112,7 @@ body {
 
 /* Coaching Cards */
 .coaching {
-  background-color: #ebf7f0;
+  background-color: #001d2c;
   padding: 4rem 2rem;
   text-align: center;
   margin-top: 3rem;
@@ -120,13 +121,14 @@ body {
 
 .coaching h2 {
   font-size: 2rem;
-  color: #005f3c;
+  color: white;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
 .coaching p {
   font-size: 1.15rem;
-
+  color: white;
   max-width: 700px;
   margin: 0 auto 2rem auto;
   line-height: 1.6;
@@ -142,7 +144,7 @@ body {
 
 .card {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255);
   border-radius: 23px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(0px);
@@ -154,12 +156,16 @@ body {
 }
 
 .card h3 {
-  color: #00472d;
+  color: #c5a66d;
   margin-bottom: 0.5rem;
 }
 
+.card p {
+  color: #2d2d2c;
+}
+
 .card button {
-  background-color: #2ecc71;
+  background-color: #c5a66d;
   color: white;
   font-size: 18px;
   padding: 15px 30px;
@@ -172,7 +178,7 @@ body {
 }
 
 .card button:hover {
-  background-color: #27ae60;
+  background-color: #d3b171;
   transform: scale(1.05);
 }
 
@@ -194,12 +200,12 @@ body {
 
 .target-text h2 {
   font-size: 2rem;
-  color: #005f3c;
+  color: #c5a66d;
   margin-bottom: 1rem;
 }
 
 .target-text p {
-  color: #333;
+  color: #2d2d2c;
   font-size: 1.15rem;
 }
 
@@ -212,13 +218,14 @@ body {
 
 /* Testimonials */
 .testimonials-quote {
-  background: #ebf7f0;
+  background: #001d2c;
   padding: 6rem 2rem;
   padding-bottom: 2rem;
 }
 
 .testimonials-quote h2 {
-  color: #005f3c;
+  color: white;
+  font-weight: 400;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -282,8 +289,8 @@ body {
   width: 44px;
   height: 44px;
   border: none;
-  background: #ebf7f0;
-  color: #005f3c;
+  background: none;
+  color: #c5a66d;
   font-size: 2rem;
   cursor: pointer;
   display: flex;
@@ -294,10 +301,6 @@ body {
   z-index: 2;
 }
 
-.tq-arrow:hover {
-  background: rgba(46, 204, 113, 0.4);
-  transform: translateY(-50%) scale(1.05);
-}
 
 .tq-prev {
   left: 8px;
@@ -328,18 +331,17 @@ body {
 /*Kontakt*/
 .contact {
   padding: 6rem 2rem;
-  background-color: #ffffff;
   text-align: center;
 }
 
 .contact h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #005f3c;
+  color: #c5a66d;
 }
 
 .contact p {
-  color: #444;
+  color: #ccc;
   margin-bottom: 2rem;
   margin-top: 1.5rem;
   font-size: 1.15rem;
@@ -348,13 +350,14 @@ body {
 
 /*Footer*/
 .footer {
-  background-color: #292929;
-  color: #fff;
+  background-color: #001d2c;
+  color: #ccc;
   padding: 3rem 2rem 2rem;
   font-size: 0.95rem;
 }
 
 .footer-content {
+  border-top: 2px solid #c5a66d;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -362,6 +365,7 @@ body {
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .footer-info p {
@@ -370,7 +374,7 @@ body {
 }
 
 .footer-info strong {
-  color: #24a158;
+  color: #c5a66d;
 }
 
 .footer-info a {
@@ -380,7 +384,7 @@ body {
 }
 
 .footer-info a:hover {
-  color: #2ecc71;
+  color: #d3b171;
 }
 
 .footer-links {
@@ -396,12 +400,11 @@ body {
 }
 
 .footer-links a:hover {
-  color: #2ecc71;
+  color: #d3b171;
 }
 
 .footer-links i {
   font-size: 1.4rem;
-  color: #24a158;
   margin-bottom: 0.5rem;
 }
 
