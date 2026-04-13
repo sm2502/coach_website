@@ -311,10 +311,11 @@ body {
   padding: 2rem 1.5rem;
   width: min(100%, 340px);
   box-shadow: var(--shadow);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 230px;
+  text-align: center;
 }
 
 .card h3 {
@@ -326,6 +327,10 @@ body {
 .card p {
   margin: 0 0 1.6rem;
   color: var(--text);
+}
+
+.card .btn-secondary {
+  margin-top: auto;
 }
 
 /* =========================
@@ -432,6 +437,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.contact h2 {
+  color: var(--gold);
+}
+
 .contact p {
   max-width: 720px;
   margin: 0 auto 1.4rem;
@@ -514,22 +523,22 @@ body {
 }
 
 #cookie-banner a {
-  color: #2ecc71;
+  color: var(--gold);
   text-decoration: underline;
 }
 
 #cookie-accept {
-  background: #2ecc71;
+  background: var(--gold);
   color: #fff;
   border: none;
   border-radius: 20px;
-  padding: 0.5rem 1rem;
+  padding: 0.55rem 1rem;
   font-weight: 600;
   cursor: pointer;
 }
 
 #cookie-accept:hover {
-  background: #27ae60;
+  background: var(--gold-hover);
 }
 
 /* =========================

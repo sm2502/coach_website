@@ -3,7 +3,9 @@ VERSION:3.0
 N:Kastenhofer;Nicolas;;;
 FN:Nicolas Kastenhofer
 ORG:Zielorientierung
-TEL;TYPE=CELL:+43 681 204 635 50
+TITLE:
+TEL;TYPE=CELL,VOICE:+4368120463550
 EMAIL;TYPE=INTERNET:nicolas@ziel-orientierung.com
 URL:https://www.ziel-orientierung.com
+NOTE:direkt | ehrlich | zielstrebig
 END:VCARD
