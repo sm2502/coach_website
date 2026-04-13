@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicolas Kastenhofer | Zielorientierung</title>
-    <meta name="description" content="Coaching für Klarheit, Ziele und Orientierung – finde deinen inneren Leuchtturm mit Nicolas Kastenhofer.">
+    <meta
+      name="description"
+      content="Coaching für Klarheit, Ziele und Orientierung – finde deinen inneren Leuchtturm mit Nicolas Kastenhofer."
+    />
 
-    <link rel="icon" type="image/x-icon" href="logo/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="logo/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,15 +20,20 @@
   <body>
     <header>
       <nav class="navbar">
-        <img src="logo/Logo Variante 4.svg" alt="Coach Logo" class="logo" decoding="async"/>
+        <img
+          src="images/navbarImage.png"
+          alt="Coach Logo"
+          class="logo"
+          decoding="async"
+        />
 
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
+        <div class="menu-toggle" id="mobile-menu" aria-label="Menü öffnen">
+          <i class="fas fa-bars"></i>
         </div>
 
         <ul class="nav-links">
           <li><a href="index.html">Start</a></li>
-          <li><a href="pages/coaching.html">Coaching</a></li>
+          <li><a href="pages/coaching.html">1:1 Begleitung</a></li>
           <li><a href="pages/about.html">Über mich</a></li>
           <li><a href="pages/contact.html">Kontakt</a></li>
         </ul>
@@ -33,151 +41,251 @@
     </header>
 
     <main>
-      <!--Hero Section-->
-      <section id="hero">
-        <div id="heroText">
-          <img src="logo/Logo Variante 4.svg" alt="logo" decoding="async"/>
-          <h1>Zielorientierung</h1>
-          <h3>Finde deinen inneren Leuchtturm</h3>
-          <p id="name">
-            Nicolas Kastenhofer | Lebens- und Sozialberater in Ausbildung unter
-            Supervision
-          </p>
-        </div>
-        <div id="heroButton">
+      <!-- Hero -->
+      <section id="hero" class="tear-section tear-bottom">
+        <div class="hero-inner">
+          <img
+            src="images/heroZielOrientierung.png"
+            alt="Logo"
+            class="hero-logo"
+            decoding="async"
+          />
+
+          <h1>Finde deinen inneren Leuchtturm</h1>
+          <p class="hero-subtitle">Nicolas Kastenhofer | Mentaltrainer</p>
+
           <a
-          class="btn-primary"
-          target="_blank"
-          href="https://cal.com/nicolas-kastenhofer-zfc4aq/secret"
-        >
-          <i class="fa-solid fa-calendar-check"></i> Kostenloses Erstgespräch
-        </a>
+            class="btn-primary"
+            target="_blank"
+            href="https://cal.com/nicolas-kastenhofer-zfc4aq/secret"
+          >
+            Kostenloses Erstgespräch
+          </a>
         </div>
       </section>
 
-      <!--About Me-->
-      <section class="about">
-        <div class="text">
-          <h2>Klarheit, Ziele & Orientierung für dein Leben</h2>
-          <p>
-            Du spürst, dass mehr in dir steckt - aber dir fehlt eine klare
-            Richtung? <br />
-            Vielleicht hast du Träume und Ambitionen, aber du kommst nicht ins
-            Handeln? <br />
-            Oder du hast bereits erste Schritte gemacht, doch der langfristige
-            Plan fehlt? <br /><br />
-            <i class="fa-solid fa-right-long"></i>
-            <b>Dann bist du hier genau richtig.</b> <br /><br />
-            Ich helfe Menschen, ihren <b>inneren Leuchtturm</b> zu finden - ihre
-            eigene Richtung, ihr Ziel, ihren Weg.
+      <!-- Intro -->
+      <section class="content-section about">
+        <div class="content-grid">
+          <div class="text-block">
+            <h2>Zwischen dem, was du willst und dem, was du lebst.</h2>
+            <p class="lead">
+              Du willst deine Ziele nicht nur setzen – sondern auch erreichen.
+            </p>
+            <p>
+              Vielleicht hast du das schon öfter erlebt. Du setzt dir ein Ziel,
+              startest motiviert und sobald es schwierig wird oder Ergebnisse
+              ausbleiben, beginnt der Zweifel. Nicht weil dir der Wille fehlt,
+              sondern weil die innere Orientierung fehlt, wenn es schwierig
+              wird.
+            </p>
+            <p>
+              Genau hier setzt meine Arbeit an. Nicht mit neuen Vorgaben oder
+              mehr Druck, sondern mit Orientierung an deinem
+              <strong>inneren Leuchtturm</strong>
+              – von innen heraus. So setzt du dir Ziele, die wirklich zu dir
+              passen und erreichst sie nicht nur, sondern lebst sie langfristig.
+            </p>
+          </div>
+
+          <div class="image-block">
+            <img
+              src="images/bild3.jpg"
+              alt="Portrait von Nicolas Kastenhofer"
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Angebote -->
+      <section class="coaching tear-section tear-top tear-bottom">
+        <div class="section-inner">
+          <h2>Lass uns loslegen</h2>
+          <p class="section-intro">
+            Dein Weg zu mehr Klarheit beginnt hier. Wähle das Format, das am
+            besten zu dir passt – und wir starten gemeinsam durch.
           </p>
-        </div>
-        <div class="image">
-          <img src="images/bild3.jpg" alt="Coach Portrait" decoding="async" loading="lazy"/>
+
+          <div class="coaching-cards">
+            <article class="card">
+              <h3>1:1 Coaching</h3>
+              <p>Individuelle Begleitung für deine Ziele.</p>
+              <a
+                class="btn-secondary"
+                href="https://cal.com/nicolas-kastenhofer-zfc4aq/secret"
+                target="_blank"
+              >
+                Termin buchen
+              </a>
+            </article>
+
+            <article class="card">
+              <h3>Kostenloser Leitfaden</h3>
+              <p>Definiere deine Ziele richtig!</p>
+              <a
+                class="btn-secondary"
+                href="downloads/9_Punkte_Leitfaden.pdf"
+                target="_blank"
+              >
+                Download
+              </a>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!--Coaching Angebot-->
-      <section class="coaching">
-        <h2>Lass uns loslegen</h2>
-        <p>Dein Weg zu mehr Klarheit und Fokus beginnt hier.  
-    Wähle das Format, das am besten zu dir passt – und wir starten gemeinsam durch.</p>
-        <div class="coaching-cards">
-          <div class="card">
-            <h3>1:1 Coaching</h3>
-            <p>Individuelle Begleitung für deine Ziele.</p>
-            <button onclick="window.open('https://cal.com/nicolas-kastenhofer-zfc4aq/secret', '_blank')">Termin buchen</button>
+      <!-- Muster -->
+      <section class="content-section target">
+        <div class="content-grid">
+          <div class="text-block">
+            <h2>Kennst du dieses Muster?</h2>
+            <p class="lead">Du setzt dir Ziele und meinst es ernst.</p>
+            <p>
+              Doch sobald es länger dauert oder schwieriger wird als erwartet,
+              beginnt der Zweifel. Du brichst ab, bevor du wirklich ankommst.
+              Dann kommt ein neuer Vorsatz. Ein neuer Anfang. Und wenn sich das
+              wiederholt, gibst du irgendwann auf. Oder du fängst gar nicht mehr
+              an.
+            </p>
+
+            <ul class="custom-list">
+              <li>Vielleicht war das Ziel doch zu groß.</li>
+              <li>Ich hab doch gewusst, dass ich das nicht schaffe.</li>
+              <li>Ich kann das einfach nicht.</li>
+              <li>Ich lasse es lieber. Es bringt ja nichts.</li>
+            </ul>
+
+            <p>
+              <strong>
+                Das hat nichts mit mangelndem Willen zu tun. Und es sagt nichts
+                über deinen Wert aus.
+              </strong>
+            </p>
           </div>
-          <div class="card">
-            <h3>Kostenloses Webinar</h3>
-            <p>Melde dich hier für das nächste Event an!</p>
-            <button onclick="window.open('https://cal.com/nicolas-kastenhofer-zfc4aq/webinar', '_blank')">Termin buchen</button>
+
+          <div class="image-block">
+            <img
+              src="images/boat.JPG"
+              alt="Leuchtturm im Nebel"
+              decoding="async"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
 
-      <!-- Zielgruppe / Für wen -->
-      <section class="target">
-        <div class="target-text">
-          <h2>Für wen ist das Coaching gedacht?</h2>
-          <p>
-            Mein Coaching richtet sich an
-            <b>Männer & Frauen zwischen 18 und 40 Jahren</b>, die bereits im
-            Berufsleben stehen oder eine Ausbildung machen. <br /><br />
-            Diese Menschen suchen keine Bevormundung, sondern
-            <b>Klarheit, Struktur und Umsetzungsstrategien</b>, um eigenständig
-            Fortschritte zu machen. Sie sind bereit, für ihren eigenen Erfolg
-            Verantwortung zu übernehmen und wollen lernen, sich selbst besser zu
-            führen. <br /><br />
-            <i class="fa-solid fa-right-long"></i>
-            <b
-              >Wenn du bereit bist, deine Ziele zu definieren und aktiv an
-              deiner Zukunft zu arbeiten, dann lass uns starten.</b
+      <!-- Testimonials -->
+      <section
+        class="testimonials-quote tear-section tear-top tear-bottom"
+        aria-label="Kundenstimmen"
+      >
+        <div class="section-inner">
+          <br /><br />
+          <h2>Was meine Klienten sagen</h2>
+
+          <div class="tq-wrap">
+            <button
+              class="tq-arrow tq-prev"
+              aria-label="Vorheriges Testimonial"
             >
-          </p>
-        </div>
-        <div class="target-image">
-          <img src="images/bild1.jpg" alt="Menschen im Coaching" decoding="async" loading="lazy"/>
+              ‹
+            </button>
+
+            <div class="tq-slider" role="region" aria-live="polite">
+              <figure class="tq-item active">
+                <blockquote class="tq-bubble">
+                  Es war ein tolles Coaching! Ich hab mich wahrgenommen gefühlt
+                  und auf meine Probleme wurde professionell eingegangen!
+                </blockquote>
+                <figcaption class="tq-cite">Max M. — Linz, AT</figcaption>
+              </figure>
+
+              <figure class="tq-item">
+                <blockquote class="tq-bubble">
+                  Ich habe mich selbst völlig neu kennengelernt – danke für
+                  diese Reise! Struktur, Klarheit und Motivation.
+                </blockquote>
+                <figcaption class="tq-cite">Anna K. — Wien, AT</figcaption>
+              </figure>
+
+              <figure class="tq-item">
+                <blockquote class="tq-bubble">
+                  Konkrete Schritte statt Overthinking. Genau das, was ich
+                  gebraucht habe.
+                </blockquote>
+                <figcaption class="tq-cite">Lukas S. — Salzburg, AT</figcaption>
+              </figure>
+            </div>
+
+            <button class="tq-arrow tq-next" aria-label="Nächstes Testimonial">
+              ›
+            </button>
+          </div>
         </div>
       </section>
 
-      <!-- Kundenstimmen -->
-       <section class="testimonials-quote" aria-label="Kundenstimmen">
-  <h2>Was meine Klienten sagen</h2>
+      <!-- Tal der Enttäuschung -->
+      <section class="content-section target">
+        <div class="content-grid">
+          <div class="text-block">
+            <h2>
+              Wie wäre es, wenn du nicht mehr gegen dich arbeiten müsstest?
+            </h2>
+            <p>
+              Stell dir vor, du setzt dir ein Ziel und bleibst ruhig, auch wenn
+              es länger dauert. Nicht, weil es leichter wird, sondern weil du
+              innerlich ausgerichtet bist.
+            </p>
+            <p>
+              Wir erwarten linearen Fortschritt – Schritt für Schritt nach oben.
+              Doch Entwicklung verläuft anders. Es gibt Phasen ohne sichtbare
+              Ergebnisse. Genau hier entsteht das
+              <strong>Tal der Enttäuschung</strong>. Und genau hier geben viele
+              auf. Nicht aus Schwäche, sondern weil Motivation ohne innere
+              Orientierung nicht trägt.
+            </p>
+            <p>
+              Was fehlt, ist kein Druck, sondern ein innerer Fixpunkt. Ein
+              <strong>innerer Leuchtturm</strong>. Wenn dein Warum klar ist und
+              deine Identität dahintersteht, veränderst du nicht sofort dein
+              Ziel, sondern zuerst deine Ausrichtung.
+            </p>
+          </div>
 
-  <div class="tq-wrap">
-    <button class="tq-arrow tq-prev" aria-label="Vorheriges Testimonial">‹</button>
-
-    <div class="tq-slider" role="region" aria-live="polite">
-      <figure class="tq-item active">
-        <blockquote class="tq-bubble">
-          Es war ein tolles Coaching! Ich hab mich wahrgenommen gefühlt und auf meine Probleme wurde professionell eingegangen!
-        </blockquote>
-        <figcaption class="tq-cite">Max M. — Linz, AT</figcaption>
-      </figure>
-
-      <figure class="tq-item">
-        <blockquote class="tq-bubble">
-          Ich habe mich selbst völlig neu kennengelernt – danke für diese Reise!
-          Struktur, Klarheit und Motivation.
-        </blockquote>
-        <figcaption class="tq-cite">Anna K. — Wien, AT</figcaption>
-      </figure>
-
-      <figure class="tq-item">
-        <blockquote class="tq-bubble">
-          Konkrete Schritte statt Overthinking. Genau das, was ich gebraucht habe.
-        </blockquote>
-        <figcaption class="tq-cite">Lukas S. — Salzburg, AT</figcaption>
-      </figure>
-    </div>
-
-    <button class="tq-arrow tq-next" aria-label="Nächstes Testimonial">›</button>
-  </div>
-</section>
-      
-
-      <!--Kontakt-->
-      <section class="contact" id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Kontaktiere mich um offene Fragen zu klären und deinen inneren Leuchtturm zu finden!</p>
-
-        <a class="btn-primary" href="pages/contact.html">
-          Nachricht senden
-        </a>
+          <div class="image-block">
+            <img
+              src="images/valley.png"
+              alt="Grafik Tal der Enttäuschung"
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer tear-section tear-top">
+      <section class="contact" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>
+          Kontaktiere mich, um offene Fragen zu klären und deinen inneren
+          Leuchtturm zu finden!
+        </p>
+
+        <a class="btn-primary" href="pages/contact.html">Nachricht senden</a>
+      </section>
+
       <div class="footer-content">
         <div class="footer-info">
           <p><strong>Nicolas Kastenhofer</strong></p>
-          <p>Lebens- und Sozialberater in Ausbildung unter Supervision</p>
-          <p>Grasbach 27, 4211 Alberndorf</p>
+          <p>Mentaltrainer</p>
+          <p>Pfeifferstraße 23, 4040 Linz</p>
           <p>+43 681 20463550</p>
           <br />
           <a href="downloads/Nicolas_Kastenhofer.vcf" download>
-             VCF Visitenkarte
+            VCF Visitenkarte
           </a>
         </div>
 
@@ -189,17 +297,15 @@
           >
             <i class="fab fa-instagram"></i>
           </a>
-          
           <a href="pages/impressum.html">Impressum</a>
           <a href="pages/datenschutz.html">Datenschutz</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Nicolas Kastenhofer – Alle Rechte vorbehalten</p>
+        <p>&copy; 2026 Nicolas Kastenhofer – Alle Rechte vorbehalten</p>
       </div>
     </footer>
-
 
     <script src="js/script.js"></script>
     <script src="js/burgermenue.js"></script>
