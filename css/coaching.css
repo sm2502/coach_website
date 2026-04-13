@@ -1,258 +1,400 @@
-/* Sub-Hero: dezent, passend zu deinem Hero-Design */
+:root {
+  --bg: #f7f6f2;
+  --white: #ffffff;
+  --text: #232323;
+  --muted: #555;
+  --dark: #001d2c;
+  --gold: #c5a66d;
+  --gold-hover: #d3b171;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --radius: 24px;
+  --max-width: 1180px;
+}
+
+.page-section,
+.section-shell {
+  width: min(var(--max-width), calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.page-section {
+  padding: 5.5rem 0;
+}
+
+/* Hero */
 .sub-hero {
-  padding: 4rem 2rem 4rem;
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background: linear-gradient(to right, #e0f5e9, #ffffff);
+  padding: 5rem 0 7rem;
+  background: var(--dark);
+  color: var(--white);
 }
+
+.sub-hero-inner {
+  width: min(820px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
 .sub-hero h1 {
-  font-size: 3rem;
-  color: #222;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.6rem;
+  font-size: clamp(2.3rem, 4.2vw, 4.2rem);
+  line-height: 1.05;
+  color: var(--white);
 }
+
 .sub-hero p {
-  color: #222;
-  margin-bottom: 1.2rem;
-  font-size: 1.125rem;
+  margin: 0 0 1.4rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.08rem;
 }
 
-.sub-hero img {
-    height: 70px
+/* Allgemein */
+.angebot h2,
+.angebote-liste h2,
+.herausforderungen h2,
+.contact-cta h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.08;
+  margin: 0 0 1rem;
 }
 
-.btn-primary,
-.btn-outline {
-  display: inline-block;
-  font-weight: 600;
-  border-radius: 30px;
-  padding: 0.8rem 1.6rem;
+.angebot h2,
+.herausforderungen h2 {
+  color: var(--gold);
+  text-align: center;
+}
+
+.angebot .lead,
+.section-intro,
+.contact-cta p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.angebot .lead {
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+.section-intro {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+/* Highlights */
+.angebot {
+  background: var(--bg);
+}
+
+.angebot-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.highlight {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem 1.6rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.highlight i {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+.highlight h3 {
+  margin: 0 0 0.8rem;
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+.highlight p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Angebote */
+.angebote-liste {
+  background: var(--dark);
+  color: var(--white);
+  padding: 7rem 0;
+}
+
+.angebote-liste h2 {
+  color: var(--white);
+  text-align: center;
+}
+
+.angebote-grid {
+  margin-top: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.angebot-item {
+  background: var(--bg);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.5rem 1.5rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.angebot-item header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.angebot-item header h3 {
+  margin: 0;
+  color: var(--gold);
+  font-size: 1.35rem;
+}
+
+.small-note {
+  margin: 0 0 0.2rem;
+  color: var(--muted);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 1.2rem;
+  flex-grow: 1;
+}
+
+.features li {
+  color: var(--text);
+  margin: 0.65rem 0;
+  line-height: 1.6;
+}
+
+.features i {
+  color: var(--gold);
+  margin-right: 0.45rem;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
   text-decoration: none;
-  transition: all .25s ease;
-  margin-top: 1rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+  border: none;
+  cursor: pointer;
+  background: var(--gold);
+  color: var(--white);
+  width: fit-content;
 }
 
-.btn-primary {
-  background: #2ecc71;
-  color: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+.btn-secondary:hover {
+  background: var(--gold-hover);
+  transform: translateY(-2px);
 }
-
-
-.btn-primary:hover { background:#27ae60; transform: translateY(-1px); }
-.btn-outline {
-  border: 2px solid #2ecc71;
-  color: #2ecc71;
-  background: transparent;
-}
-
-.btn-outline:hover { background:#2ecc71; color:#fff; }
 
 .btn-disabled {
-   display: inline-block;
-  font-weight: 600;
-  border-radius: 30px;
-  padding: 0.8rem 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
   text-decoration: none;
-  margin-top: 1rem;
-  background: #9b9b9b;
+  font-weight: 600;
+  margin-top: 0;
+  background: #9c9a93;
   color: #ffffff;
   cursor: default;
   border: none;
   box-shadow: none;
   transition: all 0.25s ease;
-  position: relative; /* wichtig für Tooltip-Positionierung */
+  position: relative;
 }
 
 .btn-disabled:hover {
-  transform: translateY(-1px);
-  background: #646464;
+  background: #7d7b75;
 }
 
-/* Tooltip-Styling */
 .btn-disabled::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: -100%; /*Position*/
-  left: 130%;
+  bottom: -95%;
+  left: 50%;
   transform: translateX(-50%);
-  background: #cacaca;
-  color: #000000;
+  background: #d7d4cc;
+  color: #232323;
   padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-size: 0.95rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
 }
 
-
-.btn-disabled:hover::after,
-.btn-disabled:hover::before {
+.btn-disabled:hover::after {
   opacity: 1;
 }
 
-
-/* Mein Angebot – 3 Highlights */
-.angebot {
-  padding: 6rem 2rem;
-  text-align: center;
-  background-color: #fff;
-}
-.angebot h2 { color:#005f3c; margin-bottom: 1rem; }
-.angebot .lead { color:#333; max-width:800px; margin:0 auto 2.5rem; }
-.angebot p {font-size: 1.15rem;}
-
-.angebot-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.highlight {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 1.8rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,.2);
-}
-.highlight i {
-  font-size: 1.6rem;
-  color: #2ecc71;
-  margin-bottom: .5rem;
-}
-.highlight h3 {
-  margin: .2rem 0 .6rem;
-  color: #2c3e50;
-}
-
-/* Angebote – Grid mit klaren Kartenkanten (schlanker Look) */
-.angebote-liste {
-  padding: 6rem 2rem;
-  background: #ebf7f0;
-  text-align: center;
-}
-.angebote-liste h2 { color:#005f3c; }
-.angebote-liste p {font-size: 1.15rem; margin-bottom: 2rem;}
-
-.angebote-grid {
-  margin-top: 2.2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1100px;
-  margin-left: auto; margin-right: auto;
-}
-.angebot-item {
-  background:#fff;
-  border-radius: 14px;
-  padding: 1.6rem 1.6rem 1.4rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,.06);
-  text-align: left;
-
-  display: flex;              
-  flex-direction: column;
-  justify-content: space-between;
-}
-.angebot-item header {
-  display: flex; align-items: center; gap: .6rem;
-  margin-bottom: 1.3rem; flex-wrap: wrap;
-}
-.angebot-item header h3 { margin: 0; color:#2c3e50; }
-.angebot-item header i { color:#2ecc71; }
-
-.features {
-  list-style: none; 
-  padding: 0; 
-  margin: .6rem 0 1rem;
-  flex-grow: 1;
-}
-.features li {
-  color: #444; margin: .4rem 0;
-}
-.features i { color:#2ecc71; margin-right: .4rem; }
-
-.actions { margin-top: 0; display:flex; gap: .8rem; }
-
-/* Typische Herausforderungen*/
+/* Herausforderungen */
 .herausforderungen {
-  padding: 6rem 2rem;
-  background: #fff;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.herausforderungen h2 {
-  color: #005f3c;
-  margin-bottom: 2.3rem;
-  text-align: center;
+  background: var(--bg);
 }
 
 .herausforderungen-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
   align-items: center;
-  gap: 2rem;
+  margin-top: 2.2rem;
 }
 
 .plain-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  flex: 1 1 500px;
 }
 
 .plain-list li {
-  margin: .85rem 0;
-  color: #444;
-  line-height: 1.7;
-  font-size: 1.10rem;
+  margin: 0 0 1rem;
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 1.05rem;
 }
 
 .plain-list i {
-  color: #2ecc71;
-  margin-right: .5rem;
+  color: var(--gold);
+  margin-right: 0.5rem;
 }
 
 .herausforderungen-image {
-  flex: 1 1 300px;
   display: flex;
   justify-content: center;
 }
 
 .herausforderungen-image img {
   width: 100%;
-  max-width: 350px;
-  border-radius: 12px;
+  max-width: 360px;
+  border-radius: 18px;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 
-/* Kontakt-CTA */
+/* CTA */
 .contact-cta {
-  padding: 6rem 2rem;
+  background: var(--dark);
+  color: var(--white);
   text-align: center;
-  background: #ebf7f0;
-}
-.contact-cta h2 { color:#005f3c; margin-bottom:.6rem; }
-.contact-cta p { color:#444; margin-bottom:1.2rem; font-size: 1.15rem;}
-
-/* Responsive Verfeinerungen */
-@media (max-width: 900px) {
-  .sub-hero h1 { font-size: 2.4rem; }
+  padding: 7rem 0 6.5rem;
 }
 
-@media (max-width: 768px) {
+.contact-cta h2 {
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.4rem;
+}
+
+/* Aktiver Navbar-Link */
+.nav-links a.active {
+  color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .angebot-highlights,
+  .angebote-grid {
+    grid-template-columns: 1fr;
+  }
+
   .herausforderungen-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .herausforderungen {
     text-align: center;
   }
+
   .plain-list {
     text-align: left;
   }
 }
 
-@media (max-width: 600px) {
-  .sub-hero { padding: 5rem 1.5rem 3rem; }
-  .angebot, .angebote-liste, .herausforderungen { padding: 4.5rem 1.5rem; }
+@media (max-width: 900px) {
+  .sub-hero {
+    min-height: 48vh;
+    padding: 4rem 0 5.5rem;
+  }
 }
 
+@media (max-width: 600px) {
+  .page-section {
+    padding: 4rem 0;
+  }
+
+  .sub-hero {
+    padding: 3.5rem 0 4.8rem;
+  }
+
+  .sub-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .sub-hero p {
+    font-size: 0.98rem;
+  }
+
+  .highlight,
+  .angebot-item {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .btn-secondary,
+  .btn-disabled {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+}
