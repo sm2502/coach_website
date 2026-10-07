@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   banner.id = 'cookie-banner';
   banner.innerHTML = `
     <p>
-      Diese Website verwendet Cookies, um Ihr Erlebnis zu verbessern.
+      Diese Website verwendet technisch notwendige Cookies. Analyse- oder Marketing-Cookies werden nicht eingesetzt.
       <a href="${privacyLink}">Mehr erfahren</a>
     </p>
     <button id="cookie-accept">OK</button>
