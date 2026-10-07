@@ -14,7 +14,7 @@ console.log("Website geladen!");
   next.addEventListener('click', () => { i = (i + 1) % items.length; show(i); });
 
   // Auto-Rotation:
-  setInterval(() => next.click(), 7000);
+  setInterval(() => next.click(), 8500);
 })();
 
 /* Handy wischen Slider */
