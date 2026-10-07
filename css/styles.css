@@ -618,7 +618,53 @@ body {
 
 @media (max-width: 700px) {
   .tq-slider {
-    padding: 0 18px 70px;
+    padding: 0 0 70px;
+  }
+
+  .tq-bubble {
+    max-width: none;
+    padding: 1.25rem 1.1rem;
+    border-radius: 16px;
+    font-size: 1rem;
+  }
+
+  .tq-text {
+    display: block;
+  }
+
+  .tq-bubble.is-collapsed .tq-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+  }
+
+  .tq-more {
+    display: block;
+    width: fit-content;
+    margin: 0.55rem 0 0 auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+  }
+
+  .tq-more[hidden] {
+    display: none;
+  }
+
+  .tq-more:hover {
+    color: var(--gold);
+  }
+
+  .tq-cite {
+    max-width: none;
   }
 
   .tq-arrow {
