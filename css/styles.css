@@ -348,19 +348,25 @@ body {
 }
 
 .tq-slider {
+  display: grid;
+  align-items: center;
   position: relative;
   min-height: 180px;
   padding: 0 56px;
 }
 
 .tq-item {
-  display: none;
+  grid-area: 1 / 1;
+  min-width: 0;
+  visibility: hidden;
+  pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .tq-item.active {
-  display: block;
+  visibility: visible;
+  pointer-events: auto;
   opacity: 1;
 }
 
@@ -377,6 +383,41 @@ body {
   line-height: 1.65;
   box-shadow: var(--shadow);
   position: relative;
+}
+
+.tq-text {
+  display: block;
+}
+
+.tq-bubble.is-collapsed .tq-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+.tq-more {
+  display: block;
+  width: fit-content;
+  margin: 0.55rem 0 0 auto;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tq-more[hidden] {
+  display: none;
+}
+
+.tq-more:hover,
+.tq-more:focus-visible {
+  color: var(--gold);
 }
 
 .tq-bubble::after {
@@ -617,8 +658,16 @@ body {
 }
 
 @media (max-width: 700px) {
+  .testimonials-quote .section-inner {
+    width: calc(100% - 2rem);
+  }
+
   .tq-slider {
     padding: 0 0 70px;
+  }
+
+  .tq-item {
+    margin-inline: 0;
   }
 
   .tq-bubble {
@@ -626,41 +675,6 @@ body {
     padding: 1.25rem 1.1rem;
     border-radius: 16px;
     font-size: 1rem;
-  }
-
-  .tq-text {
-    display: block;
-  }
-
-  .tq-bubble.is-collapsed .tq-text {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10;
-    overflow: hidden;
-  }
-
-  .tq-more {
-    display: block;
-    width: fit-content;
-    margin: 0.55rem 0 0 auto;
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: var(--text);
-    font: inherit;
-    font-size: 0.82rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    cursor: pointer;
-  }
-
-  .tq-more[hidden] {
-    display: none;
-  }
-
-  .tq-more:hover {
-    color: var(--gold);
   }
 
   .tq-cite {

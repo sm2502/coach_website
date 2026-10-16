@@ -24,37 +24,18 @@ console.log("Website geladen!");
   next.addEventListener('click', () => { i = (i + 1) % items.length; show(i); });
 
   // Auto-Rotation:
-  setInterval(() => next.click(), 8500);
+  setInterval(() => {
+    const expanded = items[i].querySelector('.tq-more[aria-expanded="true"]');
+    if (!expanded) next.click();
+  }, 8500);
 })();
 
-/* Testimonial-Texte am Handy kürzen */
+/* Testimonial-Texte auf sechs Zeilen kürzen */
 (() => {
-  const mobile = window.matchMedia('(max-width: 700px)');
   const bubbles = document.querySelectorAll('.tq-bubble');
 
-  function getExpandedHeight(item, text) {
-    const originalDisplay = item.style.display;
-    const originalPosition = item.style.position;
-    const originalVisibility = item.style.visibility;
-    const originalPointerEvents = item.style.pointerEvents;
-
-    item.style.display = 'block';
-    item.style.position = 'absolute';
-    item.style.visibility = 'hidden';
-    item.style.pointerEvents = 'none';
-
-    const height = text.scrollHeight;
-
-    item.style.display = originalDisplay;
-    item.style.position = originalPosition;
-    item.style.visibility = originalVisibility;
-    item.style.pointerEvents = originalPointerEvents;
-
-    return height;
-  }
-
   function setup() {
-    bubbles.forEach((bubble) => {
+    bubbles.forEach((bubble, index) => {
       const item = bubble.closest('.tq-item');
       if (!item) return;
 
@@ -62,6 +43,7 @@ console.log("Website geladen!");
       if (!text) {
         text = document.createElement('span');
         text.className = 'tq-text';
+        text.id = `testimonial-text-${index + 1}`;
 
         while (bubble.firstChild) {
           text.appendChild(bubble.firstChild);
@@ -77,6 +59,7 @@ console.log("Website geladen!");
         more.className = 'tq-more';
         more.textContent = 'Mehr anzeigen';
         more.setAttribute('aria-expanded', 'false');
+        more.setAttribute('aria-controls', text.id);
         bubble.appendChild(more);
 
         more.addEventListener('click', () => {
@@ -86,24 +69,20 @@ console.log("Website geladen!");
         });
       }
 
-      bubble.classList.remove('is-collapsed');
+      bubble.classList.add('is-collapsed');
       more.hidden = true;
+      more.textContent = 'Mehr anzeigen';
+      more.setAttribute('aria-expanded', 'false');
 
-      if (!mobile.matches) return;
-
-      const lineHeight = parseFloat(getComputedStyle(text).lineHeight);
-      const maxTextHeight = lineHeight * 10;
-
-      if (getExpandedHeight(item, text) > maxTextHeight + 2) {
-        bubble.classList.add('is-collapsed');
+      // Check the actual six-line box, including the currently loaded font.
+      if (text.scrollHeight > text.clientHeight + 1) {
         more.hidden = false;
-        more.textContent = 'Mehr anzeigen';
-        more.setAttribute('aria-expanded', 'false');
       }
     });
   }
 
   setup();
+  document.fonts.ready.then(setup);
   window.addEventListener('resize', setup);
 })();
 
